@@ -4,8 +4,40 @@ background-color: #555;
 
 header, footer{
     background-color: #fff;
-    height: 60px;
+    /* height: 60px; */
     padding: 10px 20px;
+}
+
+nav{
+    background-color: #ffb45f;
+    padding: 10px 7px;
+    margin: 0;
+}
+ nav a{
+    background-color: #39703c;
+    color: #fff;
+    padding: 2px 5px;
+ }
+
+
+
+main {
+    background-color: #f0f0f0;
+    max-width: 840px;
+    padding: 0 10px 1px;
+}
+
+h1{
+    color: #39703c;
+}
+
+main img{
+    width: 150px;
+    height: auto;
+}
+
+p{
+    padding: 0;
 }
 
 aside{
@@ -22,21 +54,6 @@ aside img{
     border: 4px solid #0321cc;
     width: 200px;
     height: auto;
-}
-
-main {
-    background-color: #f0f0f0;
-    max-width: 50%;
-    padding: 0 10px 1px;
-}
-
-main img{
-    width: 150px;
-    height: auto;
-}
-
-p{
-    padding: 0;
 }
 
 
