@@ -62,7 +62,7 @@ header nav ul li{
     display: inline-block;
 }
 
-header li{
+header li a{
     padding: .5rem 1.0rem;
     color: var(--white-not-so);
     transition: .3s;
@@ -70,7 +70,7 @@ header li{
     font-family: boldonse;
 }
 
-header li:hover, header li.active{
+header li:hover, header li.active a{
     background-color: var(--white-not-so);
     color: var(--navy-green);
 }
@@ -233,13 +233,13 @@ footer ul{
     
 }
 
-footer ul a {
+footer ul li {
     display: inline-block;
     margin-right: 2.0rem;
        
 }
 
-footer ul a li i{
+footer ul li i{
     font-size: 3.0rem;
     color: var(--secondary-green);
     transition: .3s;
