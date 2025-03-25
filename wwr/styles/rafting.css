@@ -70,7 +70,7 @@ header li a{
     font-family: boldonse;
 }
 
-header li:hover, header li.active a{
+header li:hover a, header li.active a{
     background-color: var(--white-not-so);
     color: var(--navy-green);
 }
