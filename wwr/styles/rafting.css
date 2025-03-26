@@ -30,6 +30,16 @@ ul {
     list-style: none;
 }
 
+
+h1,
+h2 {
+    font-family: boldonse;
+}
+
+h1 {
+    font-size: 4.0rem;
+}
+
 p {
     font-size: 2.0rem;
 }
@@ -73,15 +83,6 @@ header li:hover a,
 header li.active a {
     background-color: var(--white-not-so);
     color: var(--navy-green);
-}
-
-h1,
-h2 {
-    font-family: boldonse;
-}
-
-h1 {
-    font-size: 4.0rem;
 }
 
 
@@ -136,9 +137,7 @@ section#hero article p {
 section#hero article img {
     height: 25.0rem;
     float: right;
-
 }
-
 
 
 article#history {
@@ -156,10 +155,6 @@ article#history h2 {
 
 #history section img {
     width: 30.0rem;
-}
-
-#history section img,
-#history section p {
     display: inline-block;
     vertical-align: middle;
 }
@@ -170,6 +165,8 @@ article#history h2 {
     transition: .5s;
     color: var(--navy-green);
     cursor: default;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 #history section p:hover {
@@ -214,6 +211,7 @@ article#cta {
     background-color: var(--secondary-green);
 }
 
+
 footer {
     background-color: var(--navy-green);
     color: var(--white-not-so);
@@ -223,26 +221,25 @@ footer {
 }
 
 
-footer ul {
-
+footer #social-media {
     position: absolute;
     right: 0;
     top: 2.0rem;
 
 }
 
-footer ul li {
+#social-media li {
     display: inline-block;
     margin-right: 2.0rem;
 
 }
 
-footer ul li i {
+#social-media li i {
     font-size: 3.0rem;
     color: var(--secondary-green);
     transition: .3s;
 }
 
-footer ul li i:hover{
+#social-media li i:hover{
     color: var(--white-not-so);
 }
