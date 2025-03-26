@@ -1,20 +1,19 @@
-
-:root{
+:root {
     --white-not-so: #fefae0;
 
-    --navy-green: #283618 ;
-    --navy-green-opaque: #283618d2 ;
+    --navy-green: #283618;
+    --navy-green-opaque: #283618d2;
     --secondary-green: #606C38;
 
     --brown: #8d5524;
-    --secondary-brown:  #bc6c25 ;
+    --secondary-brown: #bc6c25;
 }
 
-html{
+html {
     font-size: 0.73vw;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -22,24 +21,24 @@ html{
     font-family: "Winky sans", sans-serif;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-p{
+p {
     font-size: 2.0rem;
 }
 
-body{
+body {
     background-color: var(--white-not-so);
 }
 
-header{
+header {
     position: fixed;
     width: 100%;
     background-color: var(--navy-green-opaque);
@@ -47,22 +46,22 @@ header{
     z-index: 1;
 }
 
-header img{
+header img {
     width: 6.5rem;
 }
 
-header nav{
+header nav {
     position: relative;
     top: 1.8rem;
     vertical-align: middle;
     float: right;
 }
 
-header nav ul li{
+header nav ul li {
     display: inline-block;
 }
 
-header li a{
+header li a {
     padding: .5rem 1.0rem;
     color: var(--white-not-so);
     transition: .3s;
@@ -70,42 +69,39 @@ header li a{
     font-family: boldonse;
 }
 
-header li:hover a, header li.active a{
+header li:hover a,
+header li.active a {
     background-color: var(--white-not-so);
     color: var(--navy-green);
 }
 
-h1,h2{
+h1,
+h2 {
     font-family: boldonse;
 }
 
-h1{
+h1 {
     font-size: 4.0rem;
 }
 
 
-section#hero{
+section#hero {
     height: 60.2rem;
     color: var(--white-not-so);
     position: relative;
-
-    & p{
-        font-size: 2.5rem;
-        margin-left: 10.0rem;
-    }
 }
 
-section#hero>img{
+section#hero>img {
     width: 100%;
     height: 100%;
 }
 
-section#hero div{
+section#hero div {
     height: 100%;
     width: 100%;
     position: absolute;
     left: 0;
-    top:0;
+    top: 0;
     background-image: linear-gradient(rgba(0, 0, 0, 0)40%, rgba(0, 0, 0, 0.959));
     background-size: cover;
 
@@ -113,12 +109,12 @@ section#hero div{
     padding-bottom: 5.0rem;
 }
 
-section#hero div h1{
+section#hero div h1 {
     position: absolute;
     bottom: 15.0rem;
 }
 
-section#hero article{
+section#hero article {
     padding-right: 2.0rem;
     width: 100%;
 
@@ -128,26 +124,29 @@ section#hero article{
 
 }
 
-section#hero article p{
+section#hero article p {
     display: inline-block;
     position: absolute;
     bottom: 4.0rem;
+    font-size: 2.5rem;
+    margin-left: 10.0rem;
 }
 
-section#hero article img{
+
+section#hero article img {
     height: 25.0rem;
     float: right;
-    
+
 }
 
 
 
-article#history{
+article#history {
     padding: 4.0rem;
     background-color: var(--white-not-so);
 }
 
-article#history h2{
+article#history h2 {
     color: var(--secondary-green);
     font-size: 2.5rem;
     margin-bottom: 2.0rem;
@@ -155,31 +154,30 @@ article#history h2{
 
 
 
-#history section img{
+#history section img {
     width: 30.0rem;
 }
 
 #history section img,
-#history section p{
+#history section p {
     display: inline-block;
     vertical-align: middle;
 }
 
-#history section p{
+#history section p {
     width: calc(100% - 30.5rem);
     padding: 1.0rem;
     transition: .5s;
     color: var(--navy-green);
-    cursor:default;
-
-    &:hover{
-        background-color: var(--secondary-brown);
-        color: var(--white-not-so);
-    }
+    cursor: default;
 }
 
+#history section p:hover {
+    background-color: var(--secondary-brown);
+    color: var(--white-not-so);
+}
 
-article#cta{
+article#cta {
     padding: 2.0rem;
     background-color: var(--brown);
     color: var(--white-not-so);
@@ -187,21 +185,21 @@ article#cta{
 
 }
 
-#cta h2{
+#cta h2 {
     padding: 1.0rem;
     font-size: 3.0rem;
     background-color: var(--white-not-so);
     display: inline-block;
-    color:  var(--secondary-green);  
+    color: var(--secondary-green);
     text-align: center;
 }
 
-#cta p{
+#cta p {
     font-size: 2.5rem;
     margin: 1.5rem 0;
 }
 
-#cta button{
+#cta button {
     background-color: var(--navy-green);
 
     color: var(--white-not-so);
@@ -212,11 +210,11 @@ article#cta{
     transition: .3s;
 }
 
-#cta button:hover{
+#cta button:hover {
     background-color: var(--secondary-green);
 }
 
-footer{
+footer {
     background-color: var(--navy-green);
     color: var(--white-not-so);
     padding: 2.0rem;
@@ -225,25 +223,26 @@ footer{
 }
 
 
-footer ul{
-    
+footer ul {
+
     position: absolute;
     right: 0;
     top: 2.0rem;
-    
+
 }
 
 footer ul li {
     display: inline-block;
     margin-right: 2.0rem;
-       
+
 }
 
-footer ul li i{
+footer ul li i {
     font-size: 3.0rem;
     color: var(--secondary-green);
     transition: .3s;
-    &:hover{
-        color: var(--white-not-so);
-    }
+}
+
+footer ul li i:hover{
+    color: var(--white-not-so);
 }
