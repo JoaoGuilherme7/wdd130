@@ -1,16 +1,86 @@
 :root {
     --white-not-so: #fefae0;
-
+    --white-not-so-opaque: #fefae0bd;
     --navy-green: #283618;
     --navy-green-opaque: #283618d2;
     --secondary-green: #606C38;
-
     --brown: #8d5524;
-    --secondary-brown: #bc6c25;
+    --secondary-brown: #bc6c25
+}
+
+h2,
+h3,
+header a,
+header h1 {
+    font-family: boldonse
+}
+
+header a.active,
+header a:hover,
+section#history {
+    color: var(--navy-green)
+}
+
+#cta h3,
+section#history h2 {
+    padding: 1rem;
+    font-size: 3rem;
+    text-align: center
+}
+
+#cta h3,
+body,
+header a.active,
+header a:hover {
+    background-color: var(--white-not-so)
+}
+
+#cta button:hover,
+#cta div#images {
+    background-color: var(--secondary-green)
+}
+
+#cta button,
+footer {
+    background-color: var(--navy-green);
+    color: var(--white-not-so)
+}
+
+#cta div p,
+#cta h3,
+footer,
+section#cta #text {
+    text-align: center
+}
+
+div#hero,
+footer {
+    position: relative
+}
+
+#cta h3,
+#social-media li i,
+div#hero article p {
+    color: var(--secondary-green)
+}
+
+#cta button,
+#cta div p,
+#social-media li i:hover,
+footer,
+header a,
+section#cta #text,
+section#history h2 {
+    color: var(--white-not-so)
 }
 
 html {
-    font-size: 0.73vw;
+    font-size: .73vw
+}
+
+header h1,
+p {
+    font-size: 2rem
 }
 
 * {
@@ -18,221 +88,176 @@ html {
     padding: 0;
     box-sizing: border-box;
     font-size: 1.6rem;
-    font-family: "Winky sans", sans-serif;
+    font-family: "Winky sans", sans-serif
 }
 
 a {
     text-decoration: none;
-    color: inherit;
+    color: inherit
 }
 
 ul {
-    list-style: none;
-}
-
-
-h1,
-h2 {
-    font-family: boldonse;
-}
-
-h1 {
-    font-size: 4.0rem;
-}
-
-p {
-    font-size: 2.0rem;
-}
-
-body {
-    background-color: var(--white-not-so);
+    list-style: none
 }
 
 header {
-    position: fixed;
+    position: sticky;
+    top: 0;
     width: 100%;
     background-color: var(--navy-green-opaque);
-    padding: 1.0rem 2.0rem;
-    z-index: 1;
+    padding: 1rem 2rem;
+    z-index: 99;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 9.0rem 1fr 1fr;
+    align-items: center
 }
 
 header img {
-    width: 6.5rem;
+    width: 100%
+}
+
+header h1 {
+    color: #fff
 }
 
 header nav {
-    position: relative;
-    top: 1.8rem;
-    vertical-align: middle;
-    float: right;
+    justify-self: end;
+    display: flex;
+    gap: .9rem
 }
 
-header nav ul li {
-    display: inline-block;
-}
-
-header li a {
-    padding: .5rem 1.0rem;
-    color: var(--white-not-so);
+header a {
+    padding: .5rem 1rem;
     transition: .3s;
-    font-size: 1.3rem;
-    font-family: boldonse;
-}
-
-header li:hover a,
-header li.active a {
-    background-color: var(--white-not-so);
-    color: var(--navy-green);
+    font-size: 1.3rem
 }
 
 div#hero {
-    height: 60.2rem;
-    color: var(--white-not-so);
-    position: relative;
+    height: 49rem;
+    display: flex;
+    align-items: center;
+    justify-content: center
 }
+
 div#hero>img {
-    width: 100%;
-    height: 100%;
-}
-div#hero div {
-    height: 100%;
-    width: 100%;
     position: absolute;
     left: 0;
     top: 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0)40%, rgba(0, 0, 0, 0.959));
-    background-size: cover;
-
-    padding: 4.0rem;
-    padding-bottom: 5.0rem;
-}
-div#hero div h1 {
-    position: absolute;
-    bottom: 15.0rem;
-}
-div#hero article {
-    padding-right: 2.0rem;
     width: 100%;
-
-    position: absolute;
-    bottom: 4.0rem;
-    left: 0;
-
+    height: 100%
 }
+
+div#hero div {
+    z-index: 1;
+    padding: 2rem;
+    background-color: var(--white-not-so-opaque)
+}
+
+div#hero div h2 {
+    font-size: 4rem;
+    align-self: end;
+    color: var(--brown)
+}
+
+div#hero article {
+    width: 100%;
+    color: var(--brown);
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 22.0rem;
+    gap: 3rem
+}
+
+div#hero article h1,
 div#hero article p {
-    display: inline-block;
-    position: absolute;
-    bottom: 4.0rem;
-    font-size: 2.5rem;
-    margin-left: 10.0rem;
+    grid-column-start: 1
+}
+
+div#hero article p {
+    font-size: 2.5rem
 }
 
 div#hero article img {
-    height: 25.0rem;
-    float: right;
+    grid-column-start: 2;
+    grid-row: 1/3;
+    height: 25rem
 }
 
-
 section#history {
-    padding: 4.0rem;
-    background-color: var(--white-not-so);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2rem;
+    gap: 2rem
 }
 
 section#history h2 {
-    color: var(--secondary-green);
-    font-size: 2.5rem;
-    margin-bottom: 2.0rem;
-}
-
-
-
-#history section img {
-    width: 30.0rem;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-#history section p {
-    width: calc(100% - 30.5rem);
-    padding: 1.0rem;
-    transition: .5s;
-    color: var(--navy-green);
-    cursor: default;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-#history section p:hover {
-    background-color: var(--secondary-brown);
-    color: var(--white-not-so);
-}
-
-section#cta {
-    padding: 2.0rem;
+    justify-self: center;
     background-color: var(--brown);
-    color: var(--white-not-so);
-    text-align: center;
-
+    width: fit-content;
+    grid-column: 1/4
 }
 
-#cta h2 {
-    padding: 1.0rem;
-    font-size: 3.0rem;
-    background-color: var(--white-not-so);
-    display: inline-block;
-    color: var(--secondary-green);
-    text-align: center;
+section#history img {
+    background-color: #283618;
+    padding: 1rem;
+    width: 100%
+}
+
+section#cta #text {
+    padding: 2rem;
+    background-color: var(--brown)
+}
+
+#cta h3 {
+    display: inline-block
 }
 
 #cta p {
     font-size: 2.5rem;
-    margin: 1.5rem 0;
+    margin: 1.5rem 0
 }
 
 #cta button {
-    background-color: var(--navy-green);
-
-    color: var(--white-not-so);
-    padding: 1.0rem 2.0rem;
+    padding: 1rem 2rem;
     border: none;
     font-size: 3rem;
     cursor: pointer;
-    transition: .3s;
+    transition: .3s
 }
 
-#cta button:hover {
-    background-color: var(--secondary-green);
+#cta div#images {
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0 2rem
 }
 
+#cta div img {
+    width: 100%;
+    height: 20rem
+}
+
+#cta div p {
+    font-size: 1.6rem
+}
 
 footer {
-    background-color: var(--navy-green);
-    color: var(--white-not-so);
-    padding: 2.0rem;
-    text-align: center;
-    position: relative;
+    padding: 2rem
 }
-
 
 footer #social-media {
     position: absolute;
     right: 0;
-    top: 2.0rem;
-
+    top: 2rem
 }
 
 #social-media li {
     display: inline-block;
-    margin-right: 2.0rem;
-
+    margin-right: 2rem
 }
 
 #social-media li i {
-    font-size: 3.0rem;
-    color: var(--secondary-green);
-    transition: .3s;
-}
-
-#social-media li i:hover{
-    color: var(--white-not-so);
+    font-size: 3rem;
+    transition: .3s
 }
