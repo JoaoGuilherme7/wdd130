@@ -22,15 +22,23 @@ section#history {
 footer,
 header a,
 section#cta #text,
-section#history h2 {
+section#history h2,
+header h1 {
     color: var(--white-not-so)
 }
 
+
 #cta h3,
-section#history h2 {
-    padding: 1rem;
+section#history h2,
+#cta button,
+#social-media li i {
     font-size: 3rem;
-    text-align: center
+}
+
+#cta h3,
+section#history h2,
+section#history img {
+    padding: 1rem;
 }
 
 #cta h3,
@@ -40,20 +48,20 @@ header a:hover {
     background-color: var(--white-not-so)
 }
 
-#cta button:hover,
-#cta div#images {
-    background-color: var(--secondary-green)
-}
+
 
 #cta button,
-footer {
-    background-color: var(--navy-green)
+footer,
+section#history img {
+    background-color: var(--navy-green);
 }
 
 #cta div figcaption,
 #cta h3,
 footer,
-section#cta #text {
+section#cta #text,
+#cta h3,
+section#history h2 {
     text-align: center
 }
 
@@ -64,8 +72,14 @@ footer {
 
 #cta h3,
 #social-media li i,
-div#hero article p {
+div#hero article p,
+#cta button:hover,
+#cta div#images {
     color: var(--secondary-green)
+}
+
+#cta div#images {
+    background-color: var(--secondary-green)
 }
 
 :root {
@@ -104,64 +118,66 @@ ul {
     list-style: none
 }
 
+header,
+div#hero>img {
+    top: 0;
+}
+
 header {
     position: sticky;
-    top: 0;
-    width: 100%;
     background-color: var(--navy-green-opaque);
-    padding: 1rem 2rem;
     z-index: 99;
-    display: grid;
     gap: 1rem;
     grid-template-columns: 9.0rem 1fr 1fr;
-    align-items: center
 }
 
-header img {
-    width: 100%
-}
-
-header h1 {
-    color: #fff
+div#hero,
+header nav {
+    display: flex;
 }
 
 header nav {
     justify-self: end;
-    display: flex;
     gap: .9rem
 }
 
 header a {
     padding: .5rem 1rem;
-    transition: .3s;
     font-size: 1.3rem
+}
+
+header,
+div#hero {
+    align-items: center;
+}
+
+div#hero article,
+div#hero {
+    justify-content: center
 }
 
 div#hero {
     height: 49rem;
-    display: flex;
-    align-items: center;
-    justify-content: center
+}
+
+footer #social-media,
+div#hero>img {
+    position: absolute;
 }
 
 div#hero>img {
-    position: absolute;
     left: 0;
-    top: 0;
-    width: 100%;
     height: 100%
 }
 
 div#hero div {
     z-index: 1;
-    padding: 2rem;
     background-color: var(--white-not-so-opaque)
 }
 
 div#hero div h2 {
     font-size: 4rem;
     align-self: end;
-    color: var(--brown)
 }
 
 #cta p,
@@ -169,11 +185,12 @@ div#hero article p {
     font-size: 2.5rem
 }
 
+div#hero div h2,
 div#hero article {
-    width: 100%;
     color: var(--brown);
-    display: grid;
-    justify-content: center;
+}
+
+div#hero article {
     grid-template-columns: 1fr 22.0rem;
     gap: 3rem
 }
@@ -190,27 +207,20 @@ div#hero article img {
 }
 
 section#history {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 2rem;
     gap: 2rem
 }
 
 section#history h2 {
     justify-self: center;
-    background-color: var(--brown);
     width: fit-content;
     grid-column: 1/4
 }
 
-section#history img {
-    background-color: #283618;
-    padding: 1rem;
-    width: 100%
-}
 
+
+section#history h2,
 section#cta #text {
-    padding: 2rem;
     background-color: var(--brown)
 }
 
@@ -219,35 +229,55 @@ section#cta #text {
 }
 
 #cta button,
-#social-media li i {
-    font-size: 3rem;
+#social-media li i,
+header a {
     transition: .3s
 }
 
+header,
 #cta button {
     padding: 1rem 2rem;
+}
+
+#cta button {
     border: none;
     cursor: pointer
 }
 
 #cta div#images {
     padding: 3rem;
-    display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 0 2rem
 }
 
+header,
+div#hero article,
+section#history,
+#cta div#images {
+    display: grid;
+}
+
+header img,
+section#history img,
+header,
+div#hero>img,
+div#hero article,
 #cta div img {
     width: 100%;
+}
+
+#cta div img {
     height: 20rem
 }
 
-footer {
+footer,
+div#hero div,
+section#history,
+section#cta #text {
     padding: 2rem
 }
 
 footer #social-media {
-    position: absolute;
     right: 0;
     top: 2rem
 }
