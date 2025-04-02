@@ -18,7 +18,6 @@ section#history {
 
 #cta button,
 #cta div figcaption,
-#social-media li i:hover,
 footer,
 header a,
 section#cta #text,
@@ -71,7 +70,6 @@ footer {
 }
 
 #cta h3,
-#social-media li i,
 div#hero article p,
 #cta button:hover,
 #cta div#images {
@@ -283,5 +281,9 @@ footer #social-media {
 }
 
 #social-media li {
-    margin-right: 2rem
+    margin-right: 2rem;
+}
+
+li a img{
+    height: 2.8rem;
 }
