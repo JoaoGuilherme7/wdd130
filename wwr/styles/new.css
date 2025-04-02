@@ -3,6 +3,16 @@
     display: inline-block
 }
 
+:root {
+    --white-not-so: #fefae0;
+    --white-not-so-opaque: #fefae0bd;
+    --navy-green: #283618;
+    --navy-green-opaque: #283618d2;
+    --secondary-green: #606C38;
+    --brown: #8d5524;
+    --secondary-brown: #bc6c25
+}
+
 h2,
 h3,
 header a,
@@ -17,7 +27,7 @@ section#history {
 }
 
 #cta button,
-#cta div figcaption,
+#cta div p,
 #social-media li i:hover,
 footer,
 header a,
@@ -31,6 +41,11 @@ section#history h2 {
     padding: 1rem;
     font-size: 3rem;
     text-align: center
+}
+
+#cta div p,
+* {
+    font-size: 1.6rem
 }
 
 #cta h3,
@@ -50,7 +65,7 @@ footer {
     background-color: var(--navy-green)
 }
 
-#cta div figcaption,
+#cta div p,
 #cta h3,
 footer,
 section#cta #text {
@@ -68,16 +83,6 @@ div#hero article p {
     color: var(--secondary-green)
 }
 
-:root {
-    --white-not-so: #fefae0;
-    --white-not-so-opaque: #fefae0bd;
-    --navy-green: #283618;
-    --navy-green-opaque: #283618d2;
-    --secondary-green: #606C38;
-    --brown: #8d5524;
-    --secondary-brown: #bc6c25
-}
-
 html {
     font-size: .73vw
 }
@@ -91,7 +96,6 @@ p {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 1.6rem;
     font-family: "Winky sans", sans-serif
 }
 
@@ -218,16 +222,12 @@ section#cta #text {
     margin: 1.5rem 0
 }
 
-#cta button,
-#social-media li i {
-    font-size: 3rem;
-    transition: .3s
-}
-
 #cta button {
     padding: 1rem 2rem;
     border: none;
-    cursor: pointer
+    font-size: 3rem;
+    cursor: pointer;
+    transition: .3s
 }
 
 #cta div#images {
@@ -254,4 +254,9 @@ footer #social-media {
 
 #social-media li {
     margin-right: 2rem
+}
+
+#social-media li i {
+    font-size: 3rem;
+    transition: .3s
 }
