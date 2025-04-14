@@ -1,0 +1,131 @@
+section.contact {
+    height:50rem;
+    display: GRID;
+    align-items: center;
+    justify-content: center;
+    padding: 2.0rem;
+}
+
+.box {
+    height: 45rem;
+    width: 69.0rem;
+    display: flex;
+    background-color: #283618;
+    border-radius: 1.0rem;
+    overflow: hidden;
+    box-shadow: 0 0 3.0rem black;
+}
+
+.contact-us {
+    background-color: var(--brown);
+    position: relative;
+    width: 75%;
+}
+
+.contact-us img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.our-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.733);
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    padding: 2.5rem;
+    z-index: 5;
+}
+
+.our-info p {
+    font-size: 1.6rem;
+}
+
+.info {
+    display: grid;
+    gap: 2.0rem;
+}
+
+p.information {
+    padding-left: 3rem;
+    font-size: 1.8rem;
+}
+
+.we-got-it {
+    color: var(--white-not-so);
+    padding: 2.5rem;
+    width: 100%;
+}
+
+
+.we-got-it form {
+    display: grid;
+    align-items: space-between;
+    width: 100%;
+    height: 90%;
+}
+
+form fieldset {
+    display: grid;
+    gap: .2rem;
+    border: none;
+    height: fit-content;
+}
+
+form input {
+    width: 100%;
+    padding: 0 1.0rem;
+    border-radius: .5rem;
+    height: 4.0rem;
+}
+
+input[type="submit"]{
+    background-color: var(--secondary-brown);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    align-self: end;    
+}
+
+iframe{
+    height: 14rem;
+    width: 100%;
+}
+
+#newsletter-fieldset{
+    display: flex;
+    gap: 1rem;
+}
+
+#newsletter{
+    height: 2.0rem;
+    width: 2.0rem;
+}
+
+.employees{
+    background-color: var(--brown);
+    padding: 2.0rem;
+}
+
+.captains{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.captains figure{
+    display: grid;
+    text-align: center;
+    background-color: var(--white-not-so);
+    padding: 1.0rem;
+}
+
+.captains img{
+    width: 20.0rem;
+}
