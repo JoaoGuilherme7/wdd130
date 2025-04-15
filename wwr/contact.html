@@ -13,13 +13,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Boldonse&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
 
-    <link rel="stylesheet" href="styles/shared.css">
+    <link rel="stylesheet" href="styles/rafting.css">
     <link rel="stylesheet" href="styles/contact-us.css">
 </head>
 
@@ -32,7 +30,7 @@
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="trips.html">Trips</a>
-            <a href="contact.html"  class="active">Contact Us</a>
+            <a href="contact.html" class="active">Contact Us</a>
         </nav>
     </header>
 
@@ -41,55 +39,83 @@
         <section class="contact">
             <div class="box">
                 <div class="contact-us">
-                    <img src="./images/rocky-river.jpg" alt="">
+                    <img src="./images/rocky-river.webp" alt="">
                     <div class="our-info">
                         <h2>Contact Us</h2>
-    
+
                         <div class="info">
                             <div>
                                 <p class="label">Phone Number:</p>
                                 <p class="information">+1 012 345 6789 </p>
                             </div>
-        
+
                             <div>
                                 <p class="label">Email:</p>
                                 <p class="information">email@wwrafting.com </p>
                             </div>
-        
+
                             <div>
                                 <p class="label">Address:</p>
                                 <p class="information">Blue Well Road, Mile 55 <br> City, State, USA </p>
                             </div>
-    
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7378.186634794997!2d-42.3084761948243!3d-22.38783925924954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9795981ea1b4c1%3A0xeeb1a61900c390b5!2sEcoparque%20Encontro%20dos%20Rios!5e0!3m2!1spt-BR!2sbr!4v1744606329753!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7378.186634794997!2d-42.3084761948243!3d-22.38783925924954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9795981ea1b4c1%3A0xeeb1a61900c390b5!2sEcoparque%20Encontro%20dos%20Rios!5e0!3m2!1spt-BR!2sbr!4v1744606329753!5m2!1spt-BR!2sbr"
+                                allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="we-got-it">
                     <h2>We got it!</h2>
-                    <form action="">
+                    <form>
                         <fieldset>
                             <label for="name">Name:</label>
-                            <input type="text" id="name" placeholder="Name">
+                            <input type="text" name="name" id="name" placeholder="Name">
                         </fieldset>
-    
+
                         <fieldset>
                             <label for="E-mail">E-mail:</label>
-                            <input type="email" id="E-mail" placeholder="E-mail">
+                            <input type="email" name="email" id="E-mail" placeholder="E-mail">
                         </fieldset>
-    
+
                         <fieldset>
                             <label for="Number">Phone Number:</label>
-                            <input type="text" id="Number" placeholder="Number">
+                            <input type="text" name="phone-numer" id="Number" placeholder="Number">
                         </fieldset>
-                        
+                       
+                        <fieldset>
+                            <label for="expectations">Expectations</label>
+                            <textarea name="expectations" id="expectations" placeholder="What are your expectations?" res></textarea>
+                        </fieldset>
+
+                        <fieldset>
+                            <label>Rafting Level:</label>
+                            <div id="levels">
+                                <span>
+                                    <input type="radio" name="level" value="Beginner" id="beginner-radio">
+                                    <label for="beginner-radio">Beginner</label>
+                                </span>
+
+                                <span>
+                                    <input type="radio" name="level" value="Intermediary" id="intermediary-radio">
+                                    <label for="intermediary-radio">Intermediary</label>
+                                </span>
+
+                                <span>
+                                    <input type="radio" name="level" value="Advanced" id="advanced-radio">
+                                    <label for="advanced-radio">Advanced</label>
+                                </span>
+                            </div>
+                        </fieldset>
+
                         <fieldset id="newsletter-fieldset">
-                            <input type="checkbox" name="" id="newsletter">
+                            <input type="checkbox" name="newsletter" id="newsletter">
                             <label for="newsletter">I accept to receive messages on my phone and/or email.</label>
                         </fieldset>
-    
-                        <input type="submit" value="Go for it!">
+
+                        <button type="submit">Join us on the next ride!</button>
                     </form>
                 </div>
             </div>
@@ -99,16 +125,16 @@
             <h2>The captains</h2>
             <div class="captains">
                 <figure>
-                    <img src="./images/john.jpg" alt="">
-                    <caption>John</caption>
+                    <img src="./images/john.webp" alt="">
+                    <figcaption>John</figcaption>
                 </figure>
                 <figure>
-                    <img src="./images/william.jpg" alt="">
-                    <caption>Willian</caption>
+                    <img src="./images/william.webp" alt="">
+                    <figcaption>Willian</figcaption>
                 </figure>
                 <figure>
-                    <img src="./images/luke.jpg" alt="">
-                    <caption>Luke</caption>
+                    <img src="./images/luke.webp" alt="">
+                    <figcaption>Luke</figcaption>
                 </figure>
             </div>
         </section>
@@ -116,6 +142,8 @@
     </main>
 
     <footer>
+        <a href="https://app.moqups.com/FD88DLkVOstGHsCn8hYYC7qzNNbqJGf8/edit/page/ad64222d5" target="_blank">Wireframe</a>
+
         <p>&copy; 2025 White Water Rafting. All rights reserved.</p>
 
         <ul id="social-media">
