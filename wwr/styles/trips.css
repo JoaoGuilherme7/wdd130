@@ -1,0 +1,65 @@
+
+.trips{
+    margin: 3.0rem;
+}
+.trips h2{
+    width: fit-content;
+    justify-self: center;
+    font-size: 2.5rem;
+    padding: 1.0rem;
+    background-color: var(--navy-green);
+}
+
+.trip {
+    margin-top: 3.0rem;
+    padding: 3.0rem;
+    background-color: var(--secondary-green);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.0rem;
+    border-radius: 2.0rem;
+    transition: .3s;
+    color: var(--white-not-so);
+}
+
+.trip:hover{
+    box-shadow: 0 0 2.0rem black;
+}
+
+.trip h3,
+.description {
+    grid-column: 1/3;
+}
+
+.description{
+    font-size: 1.7rem;
+}
+
+.stats{
+    color: var(--navy-green);
+    background-color: var(--white-not-so);
+    padding: 2.0rem;
+}
+
+.included{
+    background-color: var(--secondary-brown);
+    padding: 2.0rem;
+    color: #fff;
+}
+
+.included ul{
+    margin-left: 2.0rem;
+}
+
+.trip-images {
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.0rem;
+}
+
+.trip-images img{
+    max-width: 100%;
+    height: 25.0rem;
+    width: 100%;
+}

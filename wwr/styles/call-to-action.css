@@ -1,0 +1,60 @@
+section#cta #text {
+    padding: 2rem;
+    background-color: var(--brown);
+    text-align: center;
+    color: var(--white-not-so);
+
+    display: grid;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+
+#cta h3 {
+    width: fit-content;
+    font-family: boldonse;
+    font-size: 3rem;
+    padding: 1rem;
+    background-color: var(--white-not-so);
+    color: var(--secondary-green);
+}
+
+#cta p {
+    font-size: 2rem;
+    width: fit-content;
+}
+
+#cta a {
+    background-color: var(--navy-green);
+    color: var(--white-not-so);
+    font-size: 1.7rem;
+    transition: .3s;
+
+    justify-self: center;
+    width: fit-content;
+    padding: 1rem 2rem;
+    border: none;
+    cursor: pointer;
+}
+
+#cta a:hover{
+    color: var(--secondary-green);
+}
+
+#cta div#images {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0 2rem;
+    padding: 3rem;
+    background-color: var(--secondary-green);
+}
+
+#cta div img {
+    height: 20rem;
+    width: 100%;
+}
+
+#cta div figcaption {
+    text-align: center;
+    color: var(--white-not-so);
+}

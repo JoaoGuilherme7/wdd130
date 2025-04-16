@@ -1,5 +1,5 @@
 :root {
-    --white-not-so: #fefae0;
+    --white-not-so: #fafafa;
     --white-not-so-opaque: #fefae0bd;
 
     --navy-green: #283618;
@@ -124,10 +124,6 @@ footer p{
 
 #social-media li i {
     font-size: 3.0rem;
-    color: var(--secondary-green);
+    /* color: var(--secondary-green); */
     transition: .3s;
-}
-
-#social-media li i:hover {
-    color: var(--white-not-so);
 }
